@@ -67,7 +67,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     font-family: "Montserrat", sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 5px;
 }
 
 .container {
@@ -84,6 +84,7 @@ body {
 
 .page-title {
     text-align: center;
+    animation: hover-link -1s backwards;
 }
 
 nav a {
@@ -109,9 +110,43 @@ nav a:hover {
     }
 }
 
-.container .construction {
-    padding-top: 15px;
+
+
+/* some additional selectors for main.html */
+
+.main-page {
+    height: 100%;
+    background-image: url("img/circle-light.jpg");
+    background-color: #000000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+}
+
+.container-main {
+    background-color: rgb(25, 25, 25, 0.70);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 85%;
+    justify-content: center;
+    padding: 1px;
+    margin: auto;
     color: whitesmoke;
-    font-size: 16px;
+}
+
+.container-main .construction {
+    align-items: center;
+    font-size: 36px;
     text-align: center;
+}
+
+.container-main .soon {
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 15px;
 }
