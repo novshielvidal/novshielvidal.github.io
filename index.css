@@ -76,23 +76,42 @@ body {
     width: 85%;
     min-height: 100%;
     background-color: rgb(25, 25, 25, 0.70);
-    padding: 20px;
+    padding: 1px;
     margin: auto;
-    align-content: center;
     justify-content: center;
+
 }
 
-nav {
+.page-title {
     text-align: center;
 }
 
 nav a {
     color: white;
-    font-size: 56px;
+    font-size: 52px;
     font-stretch: wider;
     font-optical-sizing: auto;
     text-decoration-line: none;
-    letter-spacing: 2px;
-
+    letter-spacing: 5px;
+    align-self: center;
 }
 
+nav a:hover {
+    animation: hover-link -1s forwards;
+}
+
+@keyframes hover-link {
+    from {
+        text-decoration: none;
+    }
+    to {
+        text-decoration-line: line-through;
+    }
+}
+
+.container .construction {
+    padding-top: 15px;
+    color: whitesmoke;
+    font-size: 16px;
+    text-align: center;
+}
