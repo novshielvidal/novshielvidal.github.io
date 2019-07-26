@@ -73,8 +73,8 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    width: 85%;
-    min-height: 100%;
+    width: 85vmax;
+    min-height: 100vmin;
     background-color: rgb(25, 25, 25, 0.70);
     padding: 1px;
     margin: auto;
