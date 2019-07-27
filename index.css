@@ -55,8 +55,12 @@ table {
 }
 
 html {
+    min-width: 800px;
     height: 100%;
+    font-size: 16px;
 }
+
+/*      index.html desktop view     */
 
 body {
     height: 100%;
@@ -67,20 +71,21 @@ body {
     background-position: center;
     background-attachment: fixed;
     font-family: "Montserrat", sans-serif;
-    letter-spacing: 5px;
+    letter-spacing: .005rem;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 85vmax;
-    min-height: 100vmin;
-    background-color: rgb(25, 25, 25, 0.70);
-    padding: 1px;
-    margin: auto;
-    justify-content: center;
+@media(min-width: 100%) {
 
-}
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 85vmax;
+        min-height: 100vmin;
+        background-color: rgb(25, 25, 25, 0.70);
+        padding: ;
+        margin: auto;
+        justify-content: center;
+    }
 
 .page-title {
     text-align: center;
@@ -88,12 +93,13 @@ body {
 }
 
 nav a {
+    display: flex;
+    flex-direction: row;
     color: white;
-    font-size: 52px;
+    font-size: 3.5rem;
     font-stretch: wider;
-    font-optical-sizing: auto;
     text-decoration-line: none;
-    letter-spacing: 5px;
+    letter-spacing: .0005rem;
     align-self: center;
 }
 
@@ -107,10 +113,9 @@ nav a:hover {
     }
     to {
         text-decoration-line: line-through;
-        text-decoration-style: 0.5px solid black;
+        text-decoration-style: 0.0005rem solid black;
     }
 }
-
 
 
 /* some additional selectors for main.html */
@@ -150,4 +155,6 @@ nav a:hover {
     font-size: 24px;
     text-align: center;
     padding-top: 15px;
+}
+
 }
