@@ -55,70 +55,78 @@ table {
 }
 
 html {
-    min-width: 800px;
-    height: 100%;
-    font-size: 16px;
+    height: 100vh;
 }
 
 /*      index.html desktop view     */
 
-body {
-    height: 100%;
-    background-image: url("img/light-img-c.jpg");
-    background-color: #000000;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: .005rem;
-}
-
-@media(min-width: 100%) {
+@media only screen and (min-width: 500px) {
+    body {
+        height: 100%;
+        background-image: url("img/light-img-c.jpg");
+        background-color: #000000;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+    }
 
     .container {
         display: flex;
         flex-direction: column;
-        width: 85vmax;
-        min-height: 100vmin;
+        width: 85%;
+        min-height: 100%;
         background-color: rgb(25, 25, 25, 0.70);
-        padding: ;
-        margin: auto;
+        padding: 0 1%;
+        margin: 0 auto;
         justify-content: center;
     }
 
-.page-title {
-    text-align: center;
-    animation: hover-link -1s backwards;
-}
-
-nav a {
-    display: flex;
-    flex-direction: row;
-    color: white;
-    font-size: 3.5rem;
-    font-stretch: wider;
-    text-decoration-line: none;
-    letter-spacing: .0005rem;
-    align-self: center;
-}
-
-nav a:hover {
-    animation: hover-link -1s forwards;
-}
-
-@keyframes hover-link {
-    from {
-        text-decoration: none;
+    .page-title {
+        display: flex;
+        flex-direction: row;
+        padding: 25% 3%;
+        justify-content: center;
+        text-align: center;
+        animation: hover-link -1s backwards;
     }
-    to {
-        text-decoration-line: line-through;
-        text-decoration-style: 0.0005rem solid black;
+
+    nav a {
+        color: white;
+        font-size: 3.8rem;
+        font-stretch: wider;
+        text-decoration-line: none;
+        letter-spacing: 0.3rem;
+        justify-content: center;
+        align-self: center;
     }
-}
 
+    nav a:hover {
+        animation: hover-link -1s forwards;
+    }
 
-/* some additional selectors for main.html */
+    @keyframes hover-link {
+        from {
+            text-decoration: none;
+        }
+        to {
+            text-decoration-line: line-through;
+            text-decoration-style: 0.05rem solid black;
+        }
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: row;
+        color: whitesmoke;
+        font-size: 0.75rem;
+        letter-spacing: 0.001rem;
+        text-align: left;
+    }
+
+/* other selectors for main.html */
 
 .main-page {
     height: 100%;
@@ -129,20 +137,23 @@ nav a:hover {
     background-position: center;
     background-attachment: fixed;
     font-family: "Montserrat", sans-serif;
-    letter-spacing: 2px;
 }
 
 .container-main {
-    background-color: rgb(25, 25, 25, 0.70);
     display: flex;
     flex-direction: column;
-    min-height: 100%;
     width: 85%;
+    min-height: 100%;
+    background-color: rgb(25, 25, 25, 0.70);
     justify-content: center;
-    padding: 1px;
+    padding: 0 5%;
     margin: auto;
+    letter-spacing: 0.01rem;
     color: whitesmoke;
 }
+
+
+
 
 .container-main .construction {
     align-items: center;
