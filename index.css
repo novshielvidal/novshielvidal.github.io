@@ -98,6 +98,7 @@ html {
         font-stretch: wider;
         text-decoration-line: none;
         letter-spacing: 0.3rem;
+        text-indent: 0.3rem;
         justify-content: center;
         align-self: center;
     }
@@ -119,6 +120,8 @@ html {
     .copyright {
         display: flex;
         flex-direction: row;
+        position: absolute;
+        bottom: 15px;
         color: whitesmoke;
         font-size: 0.75rem;
         letter-spacing: 0.001rem;
@@ -143,11 +146,21 @@ html {
     display: flex;
     flex-direction: column;
     width: 85%;
+    height: 100%;
     background-color: rgb(25, 25, 25, 0.70);
     padding: 2% 1%;
     margin: 0 auto;
     letter-spacing: 0.01rem;
     color: whitesmoke;
+}
+
+.link-containers {
+    position: relative;
+}
+
+.link-containers > ul {
+    position: absolute;
+    right: 0;
 }
 
 .link-containers li {
