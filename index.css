@@ -161,6 +161,7 @@ html {
 .link-containers > ul {
     position: absolute;
     right: 0;
+    top: 0;
 }
 
 .link-containers li {
@@ -177,22 +178,5 @@ html {
     writing-mode: vertical-rl;
     font-size: 1rem;
 }
-
-}
-
-
-
-/* .container-main .construction {
-    align-items: center;
-    font-size: 36px;
-    text-align: center;
-}
-
-.container-main .soon {
-    align-items: center;
-    font-size: 24px;
-    text-align: center;
-    padding-top: 15px;
-} */
 
 }
