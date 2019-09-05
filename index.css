@@ -193,28 +193,6 @@ html {
         text-decoration-line: line-through;
     }
 
-    /* @keyframes animateBox {
-        from{
-            width: 2rem;
-        } to {
-            width: 20rem;;
-        }
-    } */
-
-    /* @keyframes animateText {
-        from{
-            writing-mode: vertical-rl;
-            font-size: 1rem;
-        } to {
-            writing-mode: horizontal-tb;
-            font-size: 1.3rem;
-        }
-    } */
-
-/*        selectors for about.html         */
-
-}
-
 @media only screen and (max-device-width:  1366px) {
     .main-page {
         background-attachment: scroll;
