@@ -144,7 +144,7 @@ html {
 
     .container-main {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 85%;
         height: 100%;
         background-color: rgb(25, 25, 25, 0.70);
@@ -156,6 +156,7 @@ html {
 
     .link-containers {
         position: relative;
+        font-size: 1rem;
     }
 
     .link-containers > ul {
@@ -225,12 +226,18 @@ html {
         position: relative;
         left: 0;
         top: 0;
+        line-height: 1.5rem;
+        padding-right: 50px;
     }
 
     .about-content h1 {
         align-self: left;
         font-size: 1.5rem;
         position: absolute;
+    }
+
+    .projects-links a {
+        font-size: 1rem;
     }
 
     .main-links-bar {
