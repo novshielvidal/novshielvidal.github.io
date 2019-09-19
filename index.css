@@ -167,6 +167,26 @@ html {
         position: absolute;
     }
 
+    .about-content a {
+        color: white;
+        font-size: 1rem;
+        text-decoration-line: none;
+        font-style: italic;
+    }
+
+    .about-content a:hover {
+        animation: hover-link -1s forwards;
+    }
+
+    @keyframes hover-link {
+        from {
+            text-decoration: none;
+        }
+        to {
+            text-decoration-line: line-through;
+        }
+    }
+
     .link-containers {
         position: relative;
         font-size: 1rem;
