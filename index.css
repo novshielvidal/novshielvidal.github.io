@@ -60,7 +60,7 @@ html {
 
 /*      index.html desktop view     */
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 320px) {
     body {
         height: 100%;
         background-image: url("img/light-img-c.jpg");
@@ -158,6 +158,7 @@ html {
         top: 0;
         line-height: 1.5rem;
         width: 95%;
+        padding-right: 2%;
     }
 
     .about-content h1 {
@@ -209,26 +210,30 @@ html {
     }
 
     .box {
-        border: 1px solid whitesmoke;
-        border-radius: 3px;
+        border: 1px solid gray;
+        border-radius: 4px;
         padding: 0.5% 1%;
         margin: 1% 1%;
        	font-size: .9rem;
     }
 
-@media only screen and (min-device-width:  1024px) {
+@media only screen and (min-device-width:  1280px) {
     .main-page {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-height: 800px) {
+@media only screen and (min-height: 600px) {
     .link-containers li a {
         font-size: 0.9rem;
     }
 }
 
 /*      selectors for projects.html     */
+
+    .projects-links p {
+        line-height: 1.8rem;
+    }
 
     .projects-links a {
         font-size: 1rem;
