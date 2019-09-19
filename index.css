@@ -118,13 +118,12 @@ html {
 
     .copyright {
         display: flex;
-        flex-direction: row;
-        position: absolute;
+        writing-mode: vertical-rl;
         bottom: 15px;
+        position: absolute;
         color: whitesmoke;
         font-size: 0.75rem;
         letter-spacing: 0.001rem;
-        text-align: left;
     }
 
 /* other selectors for main.html */
@@ -233,7 +232,7 @@ html {
         border-radius: 4px;
         padding: 0.5% 1%;
         margin: 1% 1%;
-       	font-size: .9rem;
+       	font-size: .8rem;
     }
 
 @media only screen and (min-device-width:  1280px) {
