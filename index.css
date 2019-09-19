@@ -121,7 +121,7 @@ html {
         writing-mode: vertical-rl;
         bottom: 15px;
         position: absolute;
-        color: darkgray;
+        color: gray;
         font-size: 0.75rem;
         letter-spacing: 0.001rem;
     }
