@@ -126,6 +126,34 @@ html {
         letter-spacing: 0.001rem;
     }
 
+/*     Scrollbar styling  -- does not work on Firefox, Internet Explorer, or Edge  */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+     background: #BDBDBD; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #666666; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #888888;
+}
+
+/*      Scrollbar styling for Firefox     */
+
+.scroller {
+    width: 5px;
+    height: 100px;
+    overflow-y: scroll;
+    scrollbar-color: #666666;
+    scrollbar-width: thin;
+  }
+
 /* other selectors for main.html */
 
     .main-page {
