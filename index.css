@@ -144,16 +144,6 @@ html {
     background: #888888;
 }
 
-/*      Scrollbar styling for Firefox     */
-
-.scroller {
-    width: 5px;
-    height: 100px;
-    overflow-y: scroll;
-    scrollbar-color: #666666;
-    scrollbar-width: thin;
-  }
-
 /* other selectors for main.html */
 
     .main-page {
